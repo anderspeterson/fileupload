@@ -1,0 +1,6 @@
+.idea
+angularfileupload/target
+node_modules
+*.iml
+src/main/webapp/bower_components
+src/main/webapp/dist
