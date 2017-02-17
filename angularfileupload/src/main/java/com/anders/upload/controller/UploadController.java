@@ -24,6 +24,7 @@ public class UploadController {
         return new Greeting(1L, String.format(template, name));
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public @ResponseBody DocumentResponse upload(
             @RequestParam(value = "file", required = true) MultipartFile file,
